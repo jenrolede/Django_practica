@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+                body  {
+                      background-color: aquamarine;
+                      font-family:cursive;
+
+                }
+                h1{ 
+                    color:black;
+                    text-align: center;
+
+                }
+        </style>
+    </head>
+    <body>
+        <h1>Bienvenido!!
+        </h1>
+        <h2>Que comience el juego</h2>
+        yo eh ponido mi pagina aqui,
+        hepl!<p>
+     Por cierto mi nombre es {{nombre}} y tengo {{Edad}} anhos, mi pasa tiempo es {{Hobbies.0}}
+     <br>
+     <h3>Mi lista de Hobbies es :</h3>
+     {% for x in Hobbies %}
+       <li>  {{ x }} </li>
+         {% endfor %}
+         <br>
+<p>Lista de tareas jeyma </p>
+         {% for tarea in lista_tareas %}
+             <li> {{ tarea.titulo }} </li>
+         {% endfor%}
+
+    </body>
+</html>
